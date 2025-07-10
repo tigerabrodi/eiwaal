@@ -1,2 +1,6 @@
-export { HelloWorld } from "./components/HelloWorld";
-export type { HelloWorldProps } from "./components/HelloWorld";
+export { useViewTransition } from "./hooks/useViewTransition";
+export type {
+  AnimationType,
+  StartTransitionFn,
+  UseViewTransitionOptions,
+} from "./types";
