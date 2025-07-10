@@ -1,0 +1,51 @@
+{
+  "name": "@tigerabrodioss/eiwaal",
+  "version": "0.1.0",
+  "description": "Animation library on top of transition view api to make create animations with little code.",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "prepublishOnly": "pnpm build"
+  },
+  "keywords": [
+    "react",
+    "component",
+    "library",
+    "typescript"
+  ],
+  "author": "Tiger Abrodi",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tigerabrodi/eiwaal"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
