@@ -1,6 +1,6 @@
 {
   "name": "@tigerabrodioss/eiwaal",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Animation library on top of transition view api to make create animations with little code.",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
