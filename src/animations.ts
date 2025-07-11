@@ -1,28 +1,28 @@
-import type { UseViewTransitionOptions } from "./types";
+import type { UseViewTransitionOptions } from './types'
 
 interface AnimationConfig {
-  duration: number;
-  easing: string;
+  duration: number
+  easing: string
 }
 
 type AnimationNames =
-  | "slideUp"
-  | "slideDown"
-  | "slideLeft"
-  | "slideRight"
-  | "fadeIn"
-  | "scaleIn"
-  | "fadeScale"
-  | "flipX"
-  | "flipY";
+  | 'slideUp'
+  | 'slideDown'
+  | 'slideLeft'
+  | 'slideRight'
+  | 'fadeIn'
+  | 'scaleIn'
+  | 'fadeScale'
+  | 'flipX'
+  | 'flipY'
 
 export function generateAnimationCSS({
   name,
   animation,
   config,
 }: UseViewTransitionOptions): string {
-  const { duration, easing } = config;
-  const durationStr = `${duration}ms`;
+  const { duration, easing } = config
+  const durationStr = `${duration}ms`
 
   const animations: Record<AnimationNames, string> = {
     slideUp: `
@@ -177,7 +177,7 @@ export function generateAnimationCSS({
         to { transform: rotateY(0deg); opacity: 1; }
       }
     `,
-  };
+  }
 
-  return animations[animation];
+  return animations[animation]
 }

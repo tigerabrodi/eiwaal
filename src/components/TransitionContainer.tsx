@@ -1,11 +1,11 @@
-import React from "react";
-import { useViewTransition } from "../hooks/useViewTransition";
-import type { UseViewTransitionOptions } from "../types";
+import React from 'react'
+import { useViewTransition } from '../hooks/useViewTransition'
+import type { UseViewTransitionOptions } from '../types'
 
 interface TransitionContainerProps extends UseViewTransitionOptions {
-  children: React.ReactNode;
-  className?: string;
-  style?: React.CSSProperties;
+  children: React.ReactNode
+  className?: string
+  style?: React.CSSProperties
 }
 
 export const TransitionContainer: React.FC<TransitionContainerProps> = ({
@@ -14,7 +14,7 @@ export const TransitionContainer: React.FC<TransitionContainerProps> = ({
   style,
   ...transitionOptions
 }) => {
-  const [ref] = useViewTransition(transitionOptions);
+  const [ref] = useViewTransition(transitionOptions)
 
   return (
     <div
@@ -24,5 +24,5 @@ export const TransitionContainer: React.FC<TransitionContainerProps> = ({
     >
       {children}
     </div>
-  );
-};
+  )
+}
