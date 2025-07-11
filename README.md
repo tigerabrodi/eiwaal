@@ -15,7 +15,7 @@ A lightweight animation library for React. Built on top of the View Transitions 
 ## 📦 Installation
 
 ```bash
-npm install eiwaal
+npm install @tigerabrodioss/eiwaal
 ```
 
 ## 🚀 Usage
